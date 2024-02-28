@@ -2,12 +2,12 @@ function Site({titulo, autor, descricao, imagem, avaliacao}){
     return(
             <div className="card">
                 <div>
-                    <img src={imagem} width={500}/>
+                    <img src={imagem} width={300}/>
                 </div>
-                <div>
-                    <h1>{titulo}</h1>
-                    <p>{autor}</p>
-                    <p className="descri">{descricao}</p>
+                <div className='card-text'>
+                    <h1 className='title'>{titulo}</h1>
+                    <p className='author'>{autor}</p>
+                    <p className="description">{descricao}</p>
                     <p>{avaliacao}</p>
                 </div>
             </div>
